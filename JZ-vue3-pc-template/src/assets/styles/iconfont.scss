@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'JZ-icon'; /* Project id 2712124 */
+  src: url('./iconfont/iconfont.woff2?t=1634177588880') format('woff2'),
+    url('./iconfont/iconfont.woff?t=1634177588880') format('woff'),
+    url('./iconfont/iconfont.ttf?t=1634177588880') format('truetype');
+}
+
+.JZ-icon {
+  font-family: 'JZ-icon' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.JZ-icon-a-ziyuan133:before {
+  content: '\e665';
+}
+
+.JZ-icon-a-ziyuan132:before {
+  content: '\e664';
+}
+
+.JZ-icon-a-ziyuan131:before {
+  content: '\e663';
+}

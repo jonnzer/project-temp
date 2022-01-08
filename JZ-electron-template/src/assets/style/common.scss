@@ -1,0 +1,73 @@
+// @import '//at.alicdn.com/t/font_2712124_jxjrpz2361.css';
+/* 公共样式 */
+.flex {
+  display: flex;
+}
+
+/* 面包屑 */
+.bread-warp {
+  margin: 22px 0 0 24px;
+}
+
+/* 页面内公共样式 */
+.pb72 {
+  padding-bottom: 72px;
+}
+
+.br10 {
+  border-radius: 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #ccc;
+}
+@font-face {
+  font-family: pingfang;
+  src: url('~@/assets/style/font/PingFang-Heavy-2.ttf');
+}
+
+@font-face {
+  font-family: canvasfont;
+  src: url('~@/assets/style/font/Kano-2.otf');
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.el-overlay {
+  display: flex;
+  align-items: center;
+}
+.ai-dialog {
+  margin: 0 auto !important;
+}

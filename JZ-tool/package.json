@@ -1,0 +1,50 @@
+{
+  "name": "JZ-tool",
+  "version": "1.0.7",
+  "description": "轻量级的通用工具库，包括日期转换、类型判断、常用方法等",
+  "main": "lib/kstool.js",
+  "module": "lib/kstool.esm.js",
+  "scripts": {
+    "build:esm": "rollup -c --environment FORMAT:esm",
+    "build:umd": "rollup -c --environment FORMAT:umd",
+    "build:min": "rollup -c --environment FORMAT:min",
+    "build": "rimraf lib/* && run-p build:esm build:umd build:min",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "dev": "rollup -w -c --environment FORMAT:esm",
+    "test": "mocha test/index.ts"
+  },
+  "keywords": [
+    "JZ-tool",
+    "date",
+    "format",
+    "time",
+    "file",
+    "clipboard"
+  ],
+  "author": "zxm",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "chai": "^4.2.0",
+    "eslint": "^7.14.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "lodash.merge": "^4.6.2",
+    "mocha": "^8.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/mocha": "^8.0.4"
+  }
+}

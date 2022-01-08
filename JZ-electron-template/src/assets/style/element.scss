@@ -1,0 +1,41 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+下面css是覆盖一些elment-ui的样式,要覆盖element的样式在这里修改
+*/
+/* icon font path, required */
+/* 改变主题色变量 */
+$--color-primary: #6249ee;
+/* 改变 icon 字体路径变量，必需 */
+// $--font-path: '~element-plus/lib/theme-chalk/fonts';
+// @import '~element-plus/packages/theme-chalk/src/index';
+
+.el-dialog {
+  border-radius: 4px;
+}
+.el-dialog__title {
+  color: $color-black;
+  font-size: 16px;
+  font-weight: 500;
+}
+.el-dialog__header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 17px;
+  &.bg-violet {
+    background: #6249ee;
+    font-weight: 500;
+    height: 50px;
+    padding: 0 !important;
+    line-height: 50px;
+    .el-dialog__title {
+      color: #ffffff !important;
+    }
+  }
+}
+.el-tag--plain {
+  background: rgba(98, 73, 238, 0.1);
+}
+.el-dialog__footer {
+  border-top: 1px solid #eee;
+}
